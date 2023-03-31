@@ -1,0 +1,224 @@
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+html {
+	font-size: 62.5%;
+}
+body {
+	font-size: 16px;
+	font-family: 'Poppins', sans-serif;
+}
+.card {
+	padding-bottom: 20em;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	width: 100%;
+	background-color: royalblue;
+	background-image: url('../images/bg-intro-mobile.png');
+	&__boxes {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		height: 100%;
+	}
+	&__title {
+		margin-bottom: 2em;
+		padding: 1em;
+		// width: 25%;
+		color: #fff;
+		text-align: center;
+	}
+	&__title h1 {
+		padding: 1em 0;
+		font-size: 2.2rem;
+	}
+	&__title p {
+		font-size: 1.8rem;
+	}
+	&__box-style {
+		display: flex;
+		flex-direction: column;
+		// justify-content: space-around;
+		height: 400px;
+		width: 260px;
+	}
+	&__btn-top {
+		padding: 1em;
+		width: 100%;
+		background-color: hsl(248, 32%, 49%);
+		border: none;
+		border-radius: 8px;
+		box-shadow: 0 5px 5px rgba(0, 0, 0, 0.432);
+		cursor: pointer;
+	}
+	&__btn-top a {
+		color: #fff;
+		font-size: 1em;
+		text-decoration: none;
+	}
+	&__btn-top span {
+		font-weight: bold;
+	}
+	&__form-box {
+		margin-top: 2em;
+		padding: 2em;
+		height: 100%;
+		background-color: aliceblue;
+		border-radius: 8px;
+	}
+	&__form {
+		padding-bottom: 0.4em;
+	}
+	&__text-error {
+		margin-top: 0.2em;
+		color: hsl(0, 100%, 74%);
+		font-size: 1rem;
+		text-align: right;
+		visibility: hidden;
+	}
+	& input {
+		padding: 0.4em 1em;
+		width: 100%;
+		color: hsl(249, 10%, 26%);
+		border: 1px solid hsl(246, 25%, 77%);
+		border-radius: 4px;
+		outline: none;
+	}
+	& input:focus {
+		border: 1px solid hsl(248, 32%, 49%);
+	}
+	&__btn-down {
+		margin-bottom: 1em;
+		padding: 1em;
+		width: 100%;
+		background-color: hsl(154, 59%, 51%);
+		color: #fff;
+		font-size: 1rem;
+		font-weight: bold;
+		text-transform: uppercase;
+		letter-spacing: 1px;
+		border: 3px solid hsla(154, 58%, 47%, 0.664);
+		border-radius: 8px;
+		transition: background-color 0.3s;
+		cursor: pointer;
+	}
+	&__uder-form-text p {
+		color: hsl(246, 25%, 77%);
+		font-size: 1rem;
+		text-align: center;
+	}
+	&__uder-form-text a {
+		color: hsl(0, 100%, 74%);
+		font-weight: bold;
+		text-decoration: none;
+	}
+	&__error input {
+		background: url('../images/icon-error.svg');
+		background-repeat: no-repeat;
+		background-position: 98% 50%;
+		background-size: 15px;
+		color: hsl(0, 100%, 74%);
+		border: 2px solid hsl(0, 100%, 74%);
+	}
+	&__error input:focus {
+		border: 2px solid hsl(0, 100%, 74%);
+	}
+	&__error &__text-error {
+		font-style: italic;
+		visibility: visible;
+	}
+	&__img-error {
+		text-align: right;
+	}
+}
+@media screen and (min-width: 375px) {
+	.card {
+		&__title h1 {
+			font-size: 3rem;
+		}
+		&__title p {
+			font-size: 2.4rem;
+		}
+
+		&__box-style {
+			height: 450px;
+			width: 340px;
+		}
+		&__btn-top {
+			padding: 1em 2em;
+		}
+		&__btn-top a {
+			font-size: 2rem;
+		}
+		& input {
+			padding: 1em 0.4em;
+		}
+		&__btn-down {
+			padding: 1.4em 1em;
+			font-size: 1.4rem;
+		}
+		&__uder-form-text p {
+			font-size: 1.3rem;
+		}
+	}
+}
+@media screen and (min-width: 1440px) {
+	.card {
+		padding-bottom: 0;
+		background-image: url('../images/bg-intro-desktop.png');
+		&__boxes {
+			flex-direction: row;
+			justify-content: center;
+			justify-content: space-evenly;
+			align-items: center;
+			width: 70%;
+		}
+		&__title {
+			width: 550px;
+			text-align: left;
+		}
+		&__title h1 {
+			font-size: 6rem;
+		}
+		&__box-style {
+			height: 650px;
+			width: 600px;
+		}
+		&__btn-top {
+			padding: 1.4em;
+		}
+		&__btn-top a {
+			font-size: 2rem;
+		}
+		&__form-box {
+			padding: 3em 2em;
+		}
+		& input {
+			padding: 1em 1em;
+			font-size: 2rem;
+		}
+		&__error input {
+			background-size: 20px;
+		}
+		&__text-error {
+			font-size: 1.4rem;
+		}
+		&__btn-down {
+			padding: 1em 1em;
+			font-size: 2rem;
+		}
+		&__btn-down:hover {
+			background-color: hsla(154, 59%, 51%, 0.582);
+		}
+		&__uder-form-text p {
+			font-size: 1.6rem;
+		}
+	}
+}

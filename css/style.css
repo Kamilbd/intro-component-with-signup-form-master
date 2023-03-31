@@ -1,0 +1,223 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+}
+
+.card {
+  padding-bottom: 20em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  width: 100%;
+  background-color: royalblue;
+  background-image: url("../images/bg-intro-mobile.png");
+}
+.card__boxes {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+.card__title {
+  margin-bottom: 2em;
+  padding: 1em;
+  color: #fff;
+  text-align: center;
+}
+.card__title h1 {
+  padding: 1em 0;
+  font-size: 2.2rem;
+}
+.card__title p {
+  font-size: 1.8rem;
+}
+.card__box-style {
+  display: flex;
+  flex-direction: column;
+  height: 400px;
+  width: 260px;
+}
+.card__btn-top {
+  padding: 1em;
+  width: 100%;
+  background-color: hsl(248, 32%, 49%);
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.432);
+  cursor: pointer;
+}
+.card__btn-top a {
+  color: #fff;
+  font-size: 1em;
+  text-decoration: none;
+}
+.card__btn-top span {
+  font-weight: bold;
+}
+.card__form-box {
+  margin-top: 2em;
+  padding: 2em;
+  height: 100%;
+  background-color: aliceblue;
+  border-radius: 8px;
+}
+.card__form {
+  padding-bottom: 0.4em;
+}
+.card__text-error {
+  margin-top: 0.2em;
+  color: hsl(0, 100%, 74%);
+  font-size: 1rem;
+  text-align: right;
+  visibility: hidden;
+}
+.card input {
+  padding: 0.4em 1em;
+  width: 100%;
+  color: hsl(249, 10%, 26%);
+  border: 1px solid hsl(246, 25%, 77%);
+  border-radius: 4px;
+  outline: none;
+}
+.card input:focus {
+  border: 1px solid hsl(248, 32%, 49%);
+}
+.card__btn-down {
+  margin-bottom: 1em;
+  padding: 1em;
+  width: 100%;
+  background-color: hsl(154, 59%, 51%);
+  color: #fff;
+  font-size: 1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border: 3px solid hsla(154, 58%, 47%, 0.664);
+  border-radius: 8px;
+  transition: background-color 0.3s;
+  cursor: pointer;
+}
+.card__uder-form-text p {
+  color: hsl(246, 25%, 77%);
+  font-size: 1rem;
+  text-align: center;
+}
+.card__uder-form-text a {
+  color: hsl(0, 100%, 74%);
+  font-weight: bold;
+  text-decoration: none;
+}
+.card__error input {
+  background: url("../images/icon-error.svg");
+  background-repeat: no-repeat;
+  background-position: 98% 50%;
+  background-size: 15px;
+  color: hsl(0, 100%, 74%);
+  border: 2px solid hsl(0, 100%, 74%);
+}
+.card__error input:focus {
+  border: 2px solid hsl(0, 100%, 74%);
+}
+.card__error .card__text-error {
+  font-style: italic;
+  visibility: visible;
+}
+.card__img-error {
+  text-align: right;
+}
+
+@media screen and (min-width: 375px) {
+  .card__title h1 {
+    font-size: 3rem;
+  }
+  .card__title p {
+    font-size: 2.4rem;
+  }
+  .card__box-style {
+    height: 450px;
+    width: 340px;
+  }
+  .card__btn-top {
+    padding: 1em 2em;
+  }
+  .card__btn-top a {
+    font-size: 2rem;
+  }
+  .card input {
+    padding: 1em 0.4em;
+  }
+  .card__btn-down {
+    padding: 1.4em 1em;
+    font-size: 1.4rem;
+  }
+  .card__uder-form-text p {
+    font-size: 1.3rem;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .card {
+    padding-bottom: 0;
+    background-image: url("../images/bg-intro-desktop.png");
+  }
+  .card__boxes {
+    flex-direction: row;
+    justify-content: center;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 70%;
+  }
+  .card__title {
+    width: 550px;
+    text-align: left;
+  }
+  .card__title h1 {
+    font-size: 6rem;
+  }
+  .card__box-style {
+    height: 650px;
+    width: 600px;
+  }
+  .card__btn-top {
+    padding: 1.4em;
+  }
+  .card__btn-top a {
+    font-size: 2rem;
+  }
+  .card__form-box {
+    padding: 3em 2em;
+  }
+  .card input {
+    padding: 1em 1em;
+    font-size: 2rem;
+  }
+  .card__error input {
+    background-size: 20px;
+  }
+  .card__text-error {
+    font-size: 1.4rem;
+  }
+  .card__btn-down {
+    padding: 1em 1em;
+    font-size: 2rem;
+  }
+  .card__btn-down:hover {
+    background-color: hsla(154, 59%, 51%, 0.582);
+  }
+  .card__uder-form-text p {
+    font-size: 1.6rem;
+  }
+}/*# sourceMappingURL=style.css.map */

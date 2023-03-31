@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- displays site properly based on user's device -->
+
+		<link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+
+		<title>Frontend Mentor | Intro component with sign up form</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,700;1,600&display=swap"
+			rel="stylesheet" />
+
+		<!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+		<link rel="stylesheet" href="css/style.css" />
+	</head>
+	<body>
+		<main>
+			<section class="card">
+				<div class="card__boxes">
+					<div class="card__title">
+						<h1>Learn to code by watching others</h1>
+
+						<p>
+							See how experienced developers solve problems in real-time. Watching scripted tutorials is great, but
+							understanding how developers think is invaluable.
+						</p>
+					</div>
+
+					<div class="card__box-style">
+						<button class="card__btn-top">
+							<a href="#"> <span>Try it free 7 days</span> then $20/mo. thereafter </a>
+						</button>
+
+						<form class="card__form-box">
+							<div class="card__form">
+								<lebel for="name"></lebel>
+								<input type="text" id="name" type="name" placeholder="First Name" />
+								<p class="card__text-error">error</p>
+							</div>
+
+							<div class="card__form">
+								<lebel for="lname"></lebel>
+								<input type="text" id="lname" type="lname" placeholder="Last Name" />
+								<p class="card__text-error">error</p>
+							</div>
+
+							<div class="card__form">
+								<lebel for="email"></lebel>
+								<input type="email" id="email" type="email" placeholder="Email Address" />
+								<p class="card__text-error">error</p>
+							</div>
+
+							<div class="card__form">
+								<lebel for="password"></lebel>
+								<input type="password" id="password" type="password" placeholder="Password" />
+								<p class="card__text-error">error</p>
+							</div>
+							<div class="card__uder-form-text">
+								<button class="card__btn-down">Claim your free trial</button>
+								<p>
+									By clicking the button, you are agreeing to our
+									<a href="#">Terms and Services</a>
+								</p>
+							</div>
+						</form>
+					</div>
+				</div>
+			</section>
+		</main>
+		<script src="js/style.js"></script>
+	</body>
+</html>
