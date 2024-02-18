@@ -1,3 +1,6 @@
+Live server: https://flourishing-naiad-1e99f6.netlify.app/
+![travel-imageeeeeeeee](https://github.com/Kamilbd/intro-component-with-signup-form-master/assets/99655638/9e8ddd6f-b99e-40e6-befe-8642708c125d)
+
 # Frontend Mentor - Intro component with sign up form solution
 
 This is a solution to the [Intro component with sign up form challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/intro-component-with-signup-form-5cf91bd49edda32581d28fd1). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
